@@ -56,7 +56,7 @@ jobs:
             python triggerfeaturesfromjira.py tickets.ini
             
       
-      - name: change from behave json to cucumber json
+      - name: get test results output in cucumber json
         run: |
             ls
             cd virtualenv/Scripts
