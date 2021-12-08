@@ -52,6 +52,7 @@ jobs:
             ls
             .\activate
             cd ..
+            ls
             cd ..
             pip install -r requirements.txt
             
