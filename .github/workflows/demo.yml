@@ -39,6 +39,7 @@ jobs:
         run: |
             exit 1
             
-      - name: get test results output in cucumber json
+      - name: run if above job failed as well
+        if : always()
         run: |
             python runthis.py
