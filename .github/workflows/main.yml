@@ -34,30 +34,18 @@ jobs:
       # setting up pip
       - name: install pip
         run: |
-            dir
-            python -m pip install --upgrade pip
             
+            python -m pip install --upgrade pip
       
-      
-  get-jira-features-build:
-    # The type of runner that the job will run on
-    needs: [build]
-    runs-on: windows-2022
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:       
-      # run python files
-      - name: get features from jira
+      # installing requirements.txt
+      - name: install pip
         run: |
-            dir
             pip install -r requirements.txt
+            
             
       
       - name: get test results output in cucumber json
         run: |
-            ls
-            cd virtualenv/Scripts
-            .\activate
-            cd ../..
             pytest -v -s features\test_dem.py --cucumberjson=results/outputs.json
           
   
