@@ -54,6 +54,7 @@ jobs:
             cd ..
             ls
             cd ..
+            ls
             pip install -r requirements.txt
             
       
