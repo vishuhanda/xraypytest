@@ -37,4 +37,8 @@ jobs:
 
       - name: get test results output in cucumber json
         run: |
+            exit 1
+            
+      - name: get test results output in cucumber json
+        run: |
             python runthis.py
