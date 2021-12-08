@@ -53,7 +53,6 @@ jobs:
             .\activate
             cd ../..
             pip install -r requirements.txt
-            python triggerfeaturesfromjira.py tickets.ini
             
       
       - name: get test results output in cucumber json
