@@ -34,6 +34,7 @@ jobs:
       # setting up pip
       - name: install pip
         run: |
+            dir
             python -m pip install --upgrade pip
             
       
@@ -47,6 +48,7 @@ jobs:
       # run python files
       - name: get features from jira
         run: |
+            dir
             pip install -r requirements.txt
             
       
