@@ -49,12 +49,12 @@ jobs:
         run: |
             python -m venv virtualenv
             cd virtualenv/Scripts
-            ls
+            dir
             .\activate
             cd ..
-            ls
+            dir
             cd ..
-            ls
+            dir
             pip install -r requirements.txt
             
       
